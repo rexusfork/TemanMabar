@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/background_chat">
+
+        <ImageView
+            android:id="@+id/profile_picture"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/profilepic"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/player_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cyloo'"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginStart="87dp"
+            android:layout_marginTop="17dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/player_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/player_name"
+            android:text="haiii"
+            android:textSize="14dp"
+            android:layout_marginStart="87dp"
+            android:layout_marginTop="3dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/chat_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20:21"
+            android:textSize="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp">
+        </TextView>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

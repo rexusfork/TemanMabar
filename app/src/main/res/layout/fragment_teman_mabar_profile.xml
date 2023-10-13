@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentTemanMabar.TemanMabar_profile">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:text="Account"
+        android:textStyle="bold"
+        android:textSize="23dp"
+        android:textColor="@color/black">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/profil"
+        android:layout_marginTop="120dp">
+        <TextView
+            android:id="@+id/TemanMabar_UsernameProfileText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cora Evelyn"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:textSize="20dp"
+            android:textStyle="bold">
+        </TextView>
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfileTebar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/txt1"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@color/white">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/general"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="General"
+        android:textSize="17dp"
+        android:layout_below="@id/imgProfileTebar"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="35dp">
+    </TextView>
+
+    <Button
+        android:id="@+id/TemanMabar_BtnAccountInformation"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/general"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_edt_text"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="13dp"
+        android:padding="13dp"
+        android:text="Account Information"></Button>
+
+    <Button
+        android:id="@+id/TemanMabar_notif"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TemanMabar_BtnAccountInformation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_edt_text"
+        android:drawableLeft="@drawable/baseline_credit_card_24"
+        android:drawablePadding="13dp"
+        android:padding="13dp"
+        android:text="Payment">
+    </Button>
+
+    <Button
+        android:id="@+id/TemanMabar_edt_settings"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TemanMabar_notif"
+        android:text="App Settings"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/ic_baseline_settings_24"
+        android:background="@drawable/bg_edt_text"
+        android:layout_centerHorizontal="true"
+        android:padding="13dp"
+        android:drawablePadding="13dp">
+    </Button>
+
+    <TextView
+        android:id="@+id/Tebarmore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More"
+        android:textSize="17dp"
+        android:layout_below="@id/TemanMabar_edt_settings"
+        android:layout_marginStart="35dp">
+    </TextView>
+
+    <Button
+        android:id="@+id/TemanMabar_edt_privacy"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Tebarmore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_edt_text"
+        android:drawableLeft="@drawable/ic_baseline_privacy_tip_24"
+        android:drawablePadding="13dp"
+        android:padding="13dp"
+        android:text="Privacy and Security">
+    </Button>
+
+    <Button
+        android:id="@+id/TemanMabarlogoutBtn"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TemanMabar_edt_privacy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_edt_text"
+        android:drawableLeft="@drawable/ic_baseline_logout_24"
+        android:drawablePadding="13dp"
+        android:padding="13dp"
+        android:text="Log out">
+    </Button>
+
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_history_playing">
+
+        <ImageView
+            android:id="@+id/cylooo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/pp_history"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txt_plyer_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player 1"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="100dp">
+        </TextView>
+
+        <Button
+            android:id="@+id/btn_view_details"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="View Details"
+            android:textAllCaps="false"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_view_details">
+        </Button>
+
+        <Button
+            android:id="@+id/btn_chat"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/btn_view_details"
+            android:text="Chat"
+            android:textAllCaps="false"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_chat">
+        </Button>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

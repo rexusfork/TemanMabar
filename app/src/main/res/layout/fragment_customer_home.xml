@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentCustomer.customer_home"
+    android:background="@drawable/backgroundmenu">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_teman_mabar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="41dp"
+            android:text="Teman Mabar"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </TextView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:src="@color/white">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/txt_hello_cora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="80dp"
+            android:text="Hello Cora!"
+            android:textSize="36sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_hello_cora"
+            android:layout_marginStart="20dp"
+            android:text="Welcome back player"
+            app:layout_constraintStart_toStartOf="parent">
+        </TextView>
+
+        <EditText
+            android:id="@+id/searchnick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_welcome"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Search nick or ID Player"
+            android:inputType="textPersonName"
+            android:textSize="12sp">
+        </EditText>
+
+        <TextView
+            android:id="@+id/txt_popular_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/searchnick"
+            android:text="Popular Game Service"
+            android:textSize="20sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/Layout1"
+            android:layout_below="@id/txt_popular_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+
+            <ImageButton
+                android:id="@+id/MobileLegendBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/txt_popular_game"
+                android:background="@drawable/rectangle_708__1_"
+                app:srcCompat="@drawable/ml_logo_1">
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/GenshinBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:layout_below="@id/txt_popular_game"
+                android:background="@drawable/rectangle_708__1_"
+                android:src="@drawable/genshin_impact_shadow_logo_by_kurikuo_steamgriddb_4_1">
+            </ImageButton>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Layout2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/Layout1">
+            
+            <ImageButton
+                android:id="@+id/ValoBtn"
+                android:layout_width="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangle_708__1_"
+                android:layout_weight="0.4"
+                android:src="@drawable/valorant_logo___pink_color_version__cropped__1">
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/MoreBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangle_708__1_"
+                android:layout_weight="0.4"
+                android:src="@drawable/more">
+            </ImageButton>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_recommended"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Layout2"
+            android:textSize="17dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:textStyle="bold"
+            android:text="Recommended Gamers">
+        </TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_recommended_gamers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txt_recommended">
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundmenu"
+    tools:context=".ProfileTemanMabar_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/BackgroundImageProfileTemanMabar"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@color/white">
+            </ImageView>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/ToolbarProfileTebar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </androidx.appcompat.widget.Toolbar>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ProfilePicTemanMabar"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="150dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/sev">
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/UsernameProfileTemanMabar"
+                android:layout_marginTop="200dp"
+                android:layout_marginLeft="160dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Text Username Here"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/NameGames"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Name Game Here"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_below="@id/ProfilePicTemanMabar">
+            </TextView>
+
+            <TextView
+                android:id="@+id/ReviewTemanMabar"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reviews"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_below="@id/NameGames">
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ReyclerViewReviews"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ReviewTemanMabar">
+            </androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <Button
+            android:id="@+id/BtnChatProfileTebar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:layout_marginRight="20dp"
+            android:text="Chat"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_chat_design">
+        </Button>
+
+        <Button
+            android:id="@+id/BtnOrderProfileTebar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="Order"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_order_design">
+        </Button>
+    </LinearLayout>
+</LinearLayout>

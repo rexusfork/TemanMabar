@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "218031993333",
+    "project_id": "temanmabar-419bd",
+    "storage_bucket": "temanmabar-419bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218031993333:android:d6e6143d6fd1c0d63370bc",
+        "android_client_info": {
+          "package_name": "com.example.temanmabars"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "218031993333-onj4eoh60tdvve2gpc9j7fe54cr35a0g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZCpcmybnIb0zMu7e6FLYdCVkOMRcdmg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "218031993333-onj4eoh60tdvve2gpc9j7fe54cr35a0g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

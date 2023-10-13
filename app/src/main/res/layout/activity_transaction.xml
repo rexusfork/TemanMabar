@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundmenu"
+    tools:context=".Transaction_Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ToolbarOrder"
+        android:background="@drawable/background_chat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08">
+
+        <TextView
+            android:id="@+id/TransactionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transaksi"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp">
+        </TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.92"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/InfoTebar"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardBackgroundColor="#BEC5E4"
+            app:cardCornerRadius="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ProfilePicTemanMabarTransaction"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/sev">
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/TebarOrderText"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Text Username is Here"
+                android:textSize="18dp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextTransactionCategoryGame"
+                android:visibility="gone"
+                android:layout_marginTop="45dp"
+                android:layout_marginStart="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="Your Text is Category is Here"
+                android:textSize="18dp"
+                android:textColor="@color/black">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/DetailTransaction"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/InfoTebar"
+            android:layout_width="match_parent"
+            app:cardBackgroundColor="#BEC5E4"
+            app:cardCornerRadius="20dp"
+            android:layout_height="190dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:id="@+id/TextOrderService"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Order Service"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+                <Button
+                    android:id="@+id/BtnCategory"
+                    android:layout_below="@id/TextOrderService"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_chat_design"
+                    android:text="Your Text Game is Here"
+                    android:textColor="@color/white">
+                </Button>
+
+                <LinearLayout
+                    android:id="@+id/Layout3"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/BtnCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="Unit Price"
+                        android:textColor="@color/black"
+                        android:textStyle="bold">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/UnitText"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="match_parent"
+                        android:gravity="right"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="1 Coin/Match"
+                        android:textColor="@color/black"
+                        android:textStyle="bold">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Layout4"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/Layout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:textSize="16sp"
+                        android:text="Order Quantity"
+                        android:textColor="@color/black"
+                        android:textStyle="bold">
+                    </TextView>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.3">
+
+                        <ImageButton
+                            android:id="@+id/BtnMinMatch"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.33"
+                            android:background="@drawable/btnminus"
+                            android:src="@drawable/baseline_remove_24">
+                        </ImageButton>
+
+                        <TextView
+                            android:id="@+id/MatchTotal"
+                            android:gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.34"
+                            android:background="@drawable/background_quantity"
+                            android:text="1"
+                            android:textColor="@color/black">
+                        </TextView>
+
+                        <ImageButton
+                            android:id="@+id/BtnAddMatch"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.33"
+                            android:background="@drawable/plus_btn"
+                            android:src="@drawable/baseline_add_24">
+                        </ImageButton>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/DetailTransactionInfo"
+            app:cardBackgroundColor="#BEC5E4"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/DetailTransaction"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/TextTotalPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Total Price"
+                    android:textColor="@color/black"
+                    android:textStyle="bold">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/TextResultTotalPrice"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="1 Coin"
+                    android:textColor="@color/black"
+                    android:textStyle="bold">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/TextTotalQuantity"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Total Quantity"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_below="@id/TextTotalPrice">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/TextResultTotalQuantity"
+                    android:layout_below="@id/TextResultTotalPrice"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="1 Match"
+                    android:textColor="@color/black"
+                    android:textStyle="bold">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/TextCoupon"
+                    android:layout_below="@id/TextTotalQuantity"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Coupon"
+                    android:textColor="@color/black"
+                    android:textStyle="bold">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/TextResultCoupon"
+                    android:layout_below="@id/TextResultTotalQuantity"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="None"
+                    android:textColor="@color/black"
+                    android:textStyle="bold">
+                </TextView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@id/DetailTransactionInfo"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="#BEC5E4"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6">
+
+                    <TextView
+                        android:id="@+id/TextFinalPrice"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="Final Price : 1 Coin"
+                        android:textColor="@color/black"
+                        android:textStyle="bold">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/TextBalance"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="Balance : 10 Coin"
+                        android:textColor="@color/black"
+                        android:textStyle="bold">
+                    </TextView>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/BtnOrder"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Order"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_chat_design">
+                </Button>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</LinearLayout>

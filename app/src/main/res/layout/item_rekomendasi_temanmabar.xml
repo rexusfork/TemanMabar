@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ImageRecomend"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/sev"
+            android:background="@drawable/bg_image">
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/UsernameRekomendasiTebar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username Here"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/CategoryGameTebar"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/UsernameRekomendasiTebar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category Here"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/CostRekomendasiTebar"
+                android:layout_below="@id/CategoryGameTebar"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="1 Coin/Match">
+            </TextView>
+
+            <TextView
+                android:id="@+id/BioRekomendasiTemanMabar"
+                android:layout_below="@id/CostRekomendasiTebar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="Bio Here"
+                android:textColor="@color/black">
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

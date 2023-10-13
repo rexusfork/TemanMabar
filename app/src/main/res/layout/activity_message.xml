@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundmenu"
+    tools:context=".Message_Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ToolbarMSGActivity"
+        android:background="@drawable/background_chat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08">
+
+        <TextView
+            android:id="@+id/NameChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Name Here"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp">
+        </TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ReyclerViewMessageActivity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.86">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.06">
+
+        <EditText
+            android:id="@+id/EditTextMessage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:hint="Ketik Sesuatu...."
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_tema">
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/BtnSendMessage"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:src="@drawable/baseline_send_24"
+            android:background="@android:color/transparent">
+        </ImageButton>
+    </LinearLayout>
+</LinearLayout>
